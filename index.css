@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main, nav{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root{
+    --primary-yellow: rgb(241, 203, 54);
+    --primary-orange: rgb(242, 155, 52);
+    --faded-white: rgb(182, 182, 182);
+}
+
+.yellow-text{
+    color: var(--primary-yellow);
+}
+
+.faded-text{
+    color: var(--faded-white);
+}
+
+.navbar{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .title_dark-mode{
+    display: flex;
+}
+
+.navbar .title_dark-mode > *{
+    margin: auto 1rem;
+}
+
+.navbar #box {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 30px;
+    width: 60px;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 40px;
+}
+
+.navbar #box:hover{
+    cursor: pointer;
+}
+
+.navbar #circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-yellow);
+    box-shadow: 0 0 10px #383838;
+    transition: all 0.3s;
+}
+
+.darkmode {
+    margin-left: 30%;
+}
+
+.fa-moon{
+    display: none;
+    color: var(--primary-yellow);
+}
+
+.fa-sun{
+    margin-left: auto;
+    margin-right: 5px;
+    color: var(--primary-yellow);
+}
+
+.navbar .nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links a:hover{
+    color: var(--primary-yellow);
+}
+
+.navbar .nav-links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+}
+
+.button{
+    width: max-content;
+    background: linear-gradient(var(--primary-yellow), var(--primary-orange));
+    padding: 1rem 1.75rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px var(--primary-orange);
+}
+
+.button:hover{
+    background: white;
+    color: var(--primary-yellow);
+    cursor: pointer;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.section-text{
+    width: 45%;
+}
+
+.heading{
+    font-size: 4rem;
+}
+
+.heading-para{
+    margin-bottom: 4rem;
+}
+
+.socials{
+    margin-top: 10rem;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--primary-yellow);
+    margin-right: 3rem;
+}
+
+.socials a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.my-img img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.my-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services{
+    display: flex;
+    margin-top: 20rem;
+    
+}
+
+.services .cards{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .card-1{
+    transform: translateX(100px);
+}
+
+.services .card-2{
+    margin-left: -28rem;
+    margin-top: -6rem;
+    transform: translateX(-50px);
+}
+
+.services .card-3{
+    margin-left: -2rem;
+    margin-top: -12rem;
+    transform: translateX(100px);
+}
+
+.services .card{
+    visibility: hidden;
+    opacity: 0;
+    height: max-content;
+    width: max-content;
+    transition: all 0.5s;
+}
+
+.services .card-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 22rem;
+    width: 16rem;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.Sticker_right {
+    grid-area: s1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+  }
+
+.services .card-box img{
+    margin: 0.5rem;
+    height: 10rem;
+    width: 95%;
+    border-radius: 6px;
+}
+
+.services .card-box .card-text{
+    width: 80%;
+    font-size: larger;
+}
+
+.services .card .button{
+    margin: 1rem auto;
+    background: white;
+    color: skyblue;
+    border-radius: 7px;
+    box-shadow: none;
+}
+
+.services .button:hover{
+    font-size: large;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.experience div{
+    text-align: center;
+    margin: 0 4rem;
+}
+
+.experience .circle{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 4rem;
+    width: 4rem;
+    color: var(--primary-orange);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.job{
+    margin-top: 20rem;
+}
+
+.job .my-img{
+    background-image: url("/images/faang.jpg");
+    border-radius: 0;
+}
+
+.projects{
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.projects .cards{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects .card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 22rem;
+    width: 16rem;
+    padding: 1rem;
+    background-color: rgb(28, 27, 27);
+    border: 2px solid var(--primary-orange);
+    border-radius: 7px;
+    text-align: center;
+    box-shadow:  0 0 5px var(--primary-orange),
+                0 0 10px var(--primary-orange);
+    transition: all 0.4s;
+}
+
+.projects .card:hover{
+    transform: translateY(-20px);
+}
+
+.projects .button{
+    background: #383838;
+    font-size: large;
+    padding: 0.6rem 1.2rem;
+    border: 3px solid var(--primary-orange);
+    border-width: 0 0 3px 3px;
+    box-shadow: none;
+    transition: all 0.1s;
+}
+
+.projects .button:hover{
+    color: var(--primary-yellow);
+    border-width: 3px 3px 0 0;
+    cursor: pointer;
+}
+
+.work .heading{
+    font-size: 3rem;
+}
+
+.work{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work .card{
+    margin-top: 5rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    background-color: rgb(28, 27, 27);
+    border: 4px solid var(--primary-yellow);
+    border-radius: 7px;
+}
+
+.work .my-img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.work .card > *{
+    margin: 0.5rem;
+}
+
+.contact{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea{
+    margin: 1rem 0;
+    padding: 0.7rem;
+    border: 4px solid var(--primary-yellow);
+    border-radius: 7px;
+}
+
+.contact input:focus, textarea:focus{
+    outline: none;
+}
+
+.contact .button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    background: linear-gradient(var(--primary-yellow) 10%, var(--primary-orange) 40%);
+    margin-top: 10rem;
+    padding: 4rem;
+}
+
+.footer .mail{
+    text-align: center;
+}
+
+.footer .socials{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer a{
+    margin: 0 1.5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 1025px) {
+    .nav-links a{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .intro{
+        display: block;
+    }
+    .intro .section-text{
+        width: 80vw;
+    }
+    .intro .my-img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .services .section-text{
+        width: 80vw;
+    }
+    .services .card{
+        margin: 2rem 0;
+    }
+    .projects .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects .card{
+        margin: 2rem 0;
+    }
+    .work p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .intro .my-img{
+        height: 20rem;
+        width: 20rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .socials{
+        width: max-content;
+    }
+    .experience div{
+        margin: 1rem;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .services .card-1,
+    .services .card-3{
+        transform: translateX(-50px);
+    }
+}
+
+.services .animate {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
